@@ -27,6 +27,33 @@ h4, h5, h6, .h4, .h5, .h6 {
     visibility: visible;
     opacity: 1;
 }
+
+.comp{
+   height: auto;
+}
+
+.partners{
+width: 50%;
+height: fit-content;
+/* background-color: RED; */
+}
+
+
+.block{
+    display: flex;
+    width: fit-content;
+    justify-content: space-around;
+}
+
+.
+.partners_bg{
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+
+    height: 3rem;
+    padding: .5rem;
+    filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.257));
+}
 /*** Button ***/
 .btn {
     font-weight: 500;
@@ -72,9 +99,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-.bg-light {
-    background-color: red;
-}
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -83,7 +108,45 @@ h4, h5, h6, .h4, .h5, .h6 {
     vertical-align: middle;
     margin-left: 8px;
 }
+
+.green__bar{
+    border-left: solid .3rem rgb(13, 135, 62);
+    border-right: solid .3rem rgb(13, 135, 62);
+    padding-left: 1rem;
+}
+
+
+.white__bar{
+    border-left: solid .2rem rgba(195, 195, 195, 0.478);
+    padding-left: 1rem;
+
+}
+
+.gray_title{
+    color: #e1ff39;
+    background-color: #ffffff14;
+    padding: 0.4rem;
+}
+
+.green__round{
+    border: solid .2rem coral;
+    border-radius: 2rem;
+    padding: 1rem;
+    line-height: 2rem;
+    background-color: #ffffffb3;
+    
+}
+
+.orange__icon{
+color: coral;
+font-size: 30px;
+
+}
 @media (max-width: 991.98px) {
+
+ 
+
+
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
@@ -93,11 +156,14 @@ h4, h5, h6, .h4, .h5, .h6 {
    }
 }
 @media (min-width: 992px) {
+
+  
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         border: none;
         margin-top: 0;
-        top: 150%;
+        top: 10%;
         opacity: 0;
         visibility: hidden;
         transition: .5s;
@@ -113,9 +179,36 @@ h4, h5, h6, .h4, .h5, .h6 {
     color: #FFFFFF !important;
     background: var(--primary) !important;
 }
+
+.nav__bnt{
+    color: #FFFFFF;
+    font-size: larger;
+    background-color: #ffc107;
+    border-radius: 10rem;
+
+
+
+}
 /*** Header ***/
+
+.head__icons{
+    color:white;
+    font-size: 33px;
+    margin: 1rem;
+}
+
+.head__top{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
     color: var(--secondary);
+    
 }
 .logo__type{
     color: #74de2e;
@@ -123,7 +216,128 @@ h4, h5, h6, .h4, .h5, .h6 {
 .logo__img{
     width: 45px;
 }
+
+
+.hero__img{
+  
+  
+  
+   top: 10rem;
+   height: 25rem;
+   z-index: -1;
+   
+   left: 1rem;
+
+   
+  
+  
+  
+    
+}
 /*** Service ***/
+
+
+
+.donut-chart {
+    position: relative;
+      width: 200px;
+    height: 200px;
+      margin: 0 auto 2rem;
+      border-radius: 100%
+   }
+  p.center {
+    background: #fff;
+    position: absolute;
+    text-align: center;
+  font-size: 28px;
+    top:0;left:0;bottom:0;right:0;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    line-height: 35px;
+    padding: 15% 0 0;
+  }
+      
+      
+  .portion-block {
+      border-radius: 50%;
+      clip: rect(0px, 200px, 200px, 100px);
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  .circle {
+      border-radius: 50%;
+      clip: rect(0px, 100px, 200px, 0px);
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      font-family: monospace;
+      font-size: 1.5rem;
+    }
+      
+    .red__color{
+        color: #E64C65;
+        font-weight: bold;
+    
+    }
+    
+    .blue__color{
+        color: #4FC4F6;
+        font-weight: bold;
+        
+    }
+
+    .green__color{
+        color: #11A8AB;
+        font-weight: bold;
+        
+    }
+  #part1 {
+      transform: rotate(0deg);
+    }
+  
+      #part1 .circle {
+          background-color: #E64C65;
+          transform: rotate(76deg);
+          animation: first 1s 1 forwards;
+        }
+      
+      
+  #part2 {
+      transform: rotate(100deg);
+    }
+  #part2 .circle {
+      background-color: #11A8AB;
+      
+      animation: second 1s 1 forwards 1s;
+    }
+  #part3 {
+      transform: rotate(250deg);
+  }
+      #part3 .circle {
+          background-color: #4FC4F6;
+          animation: third 0.5s 1 forwards 2s;
+      }
+      
+      
+  /* Animation */
+  @keyframes first {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(100deg);}
+  }
+      
+  @keyframes second {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(150deg);}
+  }
+      
+  @keyframes third {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(111deg);}
+  }
+
 .service-item {
     position: relative;
     overflow: hidden;
@@ -250,6 +464,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 .accordion .accordion-body {
     padding: 15px 0 0 0;
 }
+
+
 /*** Footer ***/
 .footer .btn.btn-link {
     display: block;
