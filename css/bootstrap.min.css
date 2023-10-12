@@ -26,7 +26,6 @@
 }
 *,::after,::before{
     box-sizing:border-box;
-    
 }
 @media (prefers-reduced-motion:no-preference){
     :root{
@@ -428,14 +427,21 @@ button{
     justify-content: center;
 }
 
-
+.header__btn{
+    justify-self: end !important
+ }
 @media (max-width:484px){
 .header__btn{
     visibility: hidden;
     display: none;
     width: 0%;
-
 }
+
+.nav__obj .btn {
+    display: none !important;
+}
+
+
 .nav__obj{
     display: flex;
  
