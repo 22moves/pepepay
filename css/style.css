@@ -45,7 +45,6 @@ height: fit-content;
     justify-content: space-around;
 }
 
-.
 .partners_bg{
     background-color: #FFFFFF;
     border-radius: 1rem;
@@ -142,10 +141,24 @@ color: coral;
 font-size: 30px;
 
 }
-@media (max-width: 991.98px) {
 
- 
+nav .navbar-collapse.show + .nav__obj .btn {
+  display: none;
+}
 
+nav .navbar-collapse.show + .nav__obj {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+
+  /* @media screen and (min-width: 768px) and (max-width: 979px) {
+  .container-fluid .container .row .col-lg-6 .hero__img {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 768px) {
 
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
@@ -155,9 +168,51 @@ font-size: 30px;
         border-top: 1px solid #EEEEEE;
    }
 }
-@media (min-width: 992px) {
 
-  
+@media screen and (max-width: 767px) {
+    .hero__img_small_wrapper {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #hero-image-container {
+        display: none !important;
+    }
+
+    .hero-header {
+        overflow: visible;
+    }
+
+    .container {
+        overflow: visible;
+    }
+
+    .hero__img_small_wrapper {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item {
+        flex: none;
+    }
+
+    .head__top .btn {
+        display: flex;
+    }
+
+    .hero__img_small {
+        display: block !important;
+        width: 300px;
+        position: absolute;
+        bottom: -200px;
+        height: auto;;
+    }
+}
+
+@media (min-width: 992px) {
 
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -175,6 +230,7 @@ font-size: 30px;
         opacity: 1;
    }
 }
+
 .navbar .btn:hover {
     color: #FFFFFF !important;
     background: var(--primary) !important;
@@ -185,9 +241,6 @@ font-size: 30px;
     font-size: larger;
     background-color: #ffc107;
     border-radius: 10rem;
-
-
-
 }
 /*** Header ***/
 
@@ -217,22 +270,16 @@ font-size: 30px;
     width: 45px;
 }
 
+.hero__img_small {
+    display: none;;
+}
 
-.hero__img{
-  
-  
-  
+.hero__img {
    top: 10rem;
    height: 25rem;
    z-index: -1;
-   
+   display: block;
    left: 1rem;
-
-   
-  
-  
-  
-    
 }
 /*** Service ***/
 
