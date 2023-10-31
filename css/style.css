@@ -732,3 +732,10 @@ nav .navbar-collapse.show + .nav__obj {
 .tokens_center{
     text-align: center;
 }
+
+.bg-light4{
+    background-image: url(../png/bg_04.png);
+    background-size: cover;
+    background-position: center;
+
+}
