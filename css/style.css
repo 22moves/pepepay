@@ -12,7 +12,7 @@
     bottom: 60px;
     z-index: 99;
 }
-h4, h5, h6, .h4, .h5, .h6 {
+h4, h5, h6, h4, h5, h6 {
     font-weight: 500 !important;
 }
 /*** Spinner ***/
