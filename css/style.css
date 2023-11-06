@@ -44,11 +44,15 @@ h4, h5, h6, .h4, .h5, .h6 {
     border-radius: 1rem;;
 } */
 
+.white_text{
+    color: #F2F8FE;
+}
+
 .left_bar{
-    border-left: solid 0.2rem rgba(195, 195, 195, 0.478);
+    border-left: solid 0.2rem #13653f;
     padding-left: 1rem;
     text-align: left;
-    color: #adadad;
+    color: #333;
 }
 
 .partners{
@@ -661,17 +665,17 @@ nav .navbar-collapse.show + .nav__obj {
   
   
   .flex2-item img {
-    max-width: 100%; /* Изображение не будет деформироваться и подстроится под размер контейнера */
-    display: block; /* Убираем лишние пробелы вокруг изображения */
+    max-width: 100%; 
+    display: block; 
   }
 
   .p_center
   {text-align: center;}
 
   footer {
-    background-color: #333; /* Цвет фона футера */
-    color: #fff; /* Цвет текста */
-    padding: 20px 0; /* Отступы внутри футера */
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px 1rem; 
     text-align: center;
 }
 
@@ -679,12 +683,12 @@ nav .navbar-collapse.show + .nav__obj {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Ширина контейнера с контентом футера */
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
 .footer-logo img {
-    max-width: 100px; /* Размер логотипа по вашему выбору */
+    max-width: 100px; 
 }
 
 .footer-menu ul {
@@ -695,7 +699,7 @@ nav .navbar-collapse.show + .nav__obj {
 }
 
 .footer-menu li {
-    margin-right: 20px; /* Отступ между пунктами меню */
+    margin-right: 20px;
 }
 
 .footer-menu a {
